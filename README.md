@@ -39,9 +39,11 @@ Use Express(based on Node.js)to achieve an online sticky-note features，includi
 - webpack(Packing Tool)
 
 
-                                                     **Author**:SpontaLeo		
 
-                                      **Wechat**:zjt007z       **Email**:ttxmTT@163.com
+
+                                                         **Author**:SpontaLeo		
+
+                                          **Wechat**:zjt007z       **Email**:ttxmTT@163.com
 
 
 
