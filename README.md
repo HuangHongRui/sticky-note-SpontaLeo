@@ -41,9 +41,9 @@ Use Express(based on Node.js)to achieve an online sticky-note features，includi
 
 
 
-                                                                **Author**:SpontaLeo		
+**Author**:SpontaLeo		
 
-                                                 **Wechat**:zjt007z       **Email**:ttxmTT@163.com
+**Wechat**:zjt007z       **Email**:ttxmTT@163.com
 
 
 
