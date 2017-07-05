@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="SpontaLeo">
+    <title>Sticky-Note</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div id="header">
+        <a class="add-note" title="AddNote" href="javascript:;"><span class="adddd"> 添加 </span></a>
+        <ul class="user-area">
+            <% if (isLogin){ %>
+                <li><img src="<%= user.avatar %>" alt=""></li>
+                <li><span title="<%= user.username %>"><%= user.username %></span></li>
+                <li><span class="line"> | </span> </li>
+                <li><a class="logout" href="/auth/logout">注销</a></li>
+                <%} else { %>
+                <li><a class="login" title="GitHub登录" href="/auth/github">GitHub登录</a></li>
+                <% } %>
+        </ul>
+    </div>
+
+        <div>
+        <div id="content"></div>
+        </div>
+        <span class="gotop">GoTop</span>
+        
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

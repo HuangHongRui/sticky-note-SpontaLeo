@@ -1,0 +1,90 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color:#fff;
+    font: 22px/1.4 '华文行楷','微软雅黑','Arial',sans-serif;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#header{
+    height: 40px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10001;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+
+    .addd{
+        display: block;
+        font-size: 18px;
+    }
+
+    .user-area{
+        padding-right: 20px;
+        float: right;
+
+        li{
+            float: left;
+            margin-left: 5px;
+            line-height: 28px;
+
+            span{
+                color: #fff;
+                display: block;
+                margin-top: 8px;
+            }
+
+            .logout{
+                margin-top: 8px;
+                color: #fff;
+                display: block;
+            }
+        }
+
+        img{
+            height: 22px;
+            margin-top: 6px;
+            border-radius: 50%;
+        }
+    }
+
+    .add-note{
+        float: left;
+        margin-left: 18px;
+        margin-top: 4px;
+        border: 1px solid #fff;
+        border-radius:6px;
+    }
+
+    .login{
+        float: right;
+        margin-left: 16px;
+        margin-top: 8px;
+        font-size: 22px;
+    }
+}
+
+#content{
+    position: relative;
+    height: -webkit-calc(100% - 30px);
+    height: -webkit-calc(100% - 30px);
+    transition: all .6s;
+}
