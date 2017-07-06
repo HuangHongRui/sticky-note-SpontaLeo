@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'FZLTCXHK';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAPAIAAAwBwT1MvMk0VVd4AAAF4AAAAVmNtYXBATObUAAASrAAAHLJjdnQgABUAAAADpFQAAAACZnBnbWXpIJkAA6KwAAABoWdseWb4XtVjAABAQAADXUpoZWFkAA5bKQAAAPwAAAA2aGhlYQHXBP4AAAE0AAAAJGhtdHgZyDmTAAAB0A);
+}
+
 html,body{
     margin: 0;
     height: 100%;
@@ -9,7 +14,7 @@ ul,li{
 }
 body{
     background-color:#fff;
-    font: 22px/1.4 '华文行楷','微软雅黑','Arial',sans-serif;
+    font: 22px/1.4 'FZLTCXHK','华文行楷','Myriad Pro','微软雅黑',Arial,sans-serif;
 }
 .clearfix:after{
     content: "";
@@ -31,12 +36,7 @@ a{
     z-index: 10001;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
-
-    .addd{
-        display: block;
-        font-size: 18px;
-    }
-
+    
     .user-area{
         padding-right: 20px;
         float: right;
@@ -45,6 +45,10 @@ a{
             float: left;
             margin-left: 5px;
             line-height: 28px;
+
+            a{
+                font-size: 16px;
+            }
 
             span{
                 color: #fff;
@@ -56,12 +60,20 @@ a{
                 margin-top: 8px;
                 color: #fff;
                 display: block;
+                font-size: 22px;
+            }
+
+            .login{
+                float: right;
+                margin-left: 16px;
+                margin-top: 8px;
+                font-size: 22px;
             }
         }
 
         img{
-            height: 22px;
-            margin-top: 6px;
+            height: 24px;
+            margin-top: 8px;
             border-radius: 50%;
         }
     }
@@ -72,16 +84,13 @@ a{
         margin-top: 4px;
         border: 1px solid #fff;
         border-radius:6px;
-    }
-
-    .login{
-        float: right;
-        margin-left: 16px;
-        margin-top: 8px;
         font-size: 22px;
+
+        .addd{
+            display: block;
+        }
     }
 }
-
 #content{
     position: relative;
     height: -webkit-calc(100% - 30px);
